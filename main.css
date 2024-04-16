@@ -153,7 +153,7 @@ input {
   border: none;
   outline: none;
   transition: 0.2s;
-  margin-right: 50px;
+  margin-right: 300px;
 }
 
 .banner1{
@@ -271,7 +271,7 @@ input {
   }
 
   .notice-board{
-    border: 5px solid #ffa38e;
+    border: 5px solid #AF77D5;
     padding: 30px;
     color: white;
     background-color: #2a692ac7;
@@ -395,6 +395,7 @@ input {
   padding: 0 20px;
   position: relative;
   justify-content: space-between;
+  cursor: pointer;
   }
 
   .hero{
@@ -589,6 +590,17 @@ input {
     .heading-text {
       font-size: 24px; /* Adjust heading text font size for smaller screens */
     }
+
+    .event-date {
+      width: 60px; /* Adjusted width for smaller screens */
+  }
+
+  .event-content {
+      width: calc(100% - 70px); /* Adjusted width for smaller screens */
+      margin-left: 5px; /* Adjusted margin for smaller screens */
+      margin-right: 10px; /* Adjusted margin for smaller screens */
+  }
+
   
     .heading h1 {
       font-size: 40px; /* Adjust heading font size for smaller screens */
@@ -649,8 +661,250 @@ input {
     #mobile i {
       font-size: 60px; /* Adjust font size of mobile icon for smaller screens */
     }
-    .academies{
-      display: inline-block;
-      margin-left: 110px;
+    .academies {
+      flex-wrap: wrap;
+    }
+  
+    .academies li {
+      flex-basis: 50%; /* Two items per row */
+      padding: 0 10px;
+      text-align: center;
+    }
+  
+    .carousel-item {
+      width: 50%;
+      height: 50vh!important;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #google_translate_element{
+      margin-right: 120px;
+    }
+    #feature{
+      justify-content: center;
+    }
+    #feature .fe-box{
+      margin: 15px 15px;
+    }
+    .carousel-caption h5 {
+      font-size: 30px;
+    }
+    .carousel-caption p{
+      font-size: 20px;
     }
   }
+  
+  @media only screen and (min-width: 1500px) {
+    header {
+      padding: 30px 100px; /* Adjust as needed */
+    }
+  
+    .hero-content h2 {
+      font-size: 48px; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 30px; /* Adjust as needed */
+    }
+  
+    footer h4 {
+      font-size: 36px; /* Adjust as needed */
+    }
+  
+    footer p,
+    footer a {
+      font-size: 24px; /* Adjust as needed */
+    }
+  
+    #mobile i {
+      font-size: 100px; /* Adjust as needed */
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .vessel {
+      width: 250px; /* Adjust as needed */
+      right: -80px; /* Adjust as needed */
+    }
+  
+    .span {
+      right: 300px; /* Adjust as needed */
+    }
+  
+    #google_translate_element {
+      margin-right: 300px; /* Adjust as needed */
+    }
+  
+    .mt-20,
+    .mt-30,
+    .mt-50 {
+      margin-top: 50px; /* Adjust as needed */
+    }
+  
+    .heading-text {
+      font-size: 28px; /* Adjust as needed */
+    }
+  
+    .heading h1 {
+      font-size: 55px; /* Adjust as needed */
+      margin-top: 35px; /* Adjust as needed */
+    }
+  
+    .hero-content {
+      width: 600px; /* Adjust as needed */
+    }
+  
+    .hero-content h2 {
+      font-size: 38px; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 24px; /* Adjust as needed */
+    }
+  
+    .footer .col {
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+  
+    footer h4 {
+      font-size: 30px; /* Adjust as needed */
+    }
+  
+    footer p,
+    footer a {
+      font-size: 20px; /* Adjust as needed */
+    }
+  
+    #mobile i {
+      font-size: 80px; /* Adjust as needed */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  /* Responsive styles for regular screens */
+  
+  @media only screen and (max-width: 1023px) {
+    header {
+      padding: 20px 40px; /* Adjust as needed */
+    }
+  
+    .vessel,
+    .span {
+      display: none;
+    }
+  
+    #google_translate_element {
+      margin-right: 10px; /* Adjust as needed */
+    }
+  
+    .mt-20,
+    .mt-30,
+    .mt-50 {
+      margin-top: 30px; /* Adjust as needed */
+    }
+  
+    .heading-text {
+      font-size: 24px; /* Adjust as needed */
+    }
+  
+    .heading h1 {
+      font-size: 40px; /* Adjust as needed */
+      margin-top: 20px; /* Adjust as needed */
+    }
+  
+    .hero-content {
+      width: 100%;
+      margin: 0px 25px;
+    }
+  
+    .hero-content h2 {
+      font-size: 28px; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 18px; /* Adjust as needed */
+    }
+  
+    footer .col {
+      margin-bottom: 10px; /* Adjust as needed */
+    }
+  
+    footer h4 {
+      font-size: 24px; /* Adjust as needed */
+    }
+  
+    footer p,
+    footer a {
+      font-size: 18px; /* Adjust as needed */
+    }
+  
+    #mobile i {
+      font-size: 60px; /* Adjust as needed */
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .vessel {
+      width: 250px; /* Adjust as needed */
+      right: -80px; /* Adjust as needed */
+    }
+  
+    .span {
+      right: 300px; /* Adjust as needed */
+    }
+  
+    #google_translate_element {
+      margin-right: 300px; /* Adjust as needed */
+    }
+  
+    .mt-20,
+    .mt-30,
+    .mt-50 {
+      margin-top: 50px; /* Adjust as needed */
+    }
+  
+    .heading-text {
+      font-size: 28px; /* Adjust as needed */
+    }
+  
+    .heading h1 {
+      font-size: 55px; /* Adjust as needed */
+      margin-top: 35px; /* Adjust as needed */
+    }
+  
+    .hero-content {
+      width: 600px; /* Adjust as needed */
+    }
+  
+    .hero-content h2 {
+      font-size: 38px; /* Adjust as needed */
+    }
+  
+    .hero-content p {
+      font-size: 24px; /* Adjust as needed */
+    }
+  
+    .footer .col {
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+  
+    footer h4 {
+      font-size: 30px; /* Adjust as needed */
+    }
+  
+    footer p,
+    footer a {
+      font-size: 20px; /* Adjust as needed */
+    }
+  
+    #mobile i {
+      font-size: 80px; /* Adjust as needed */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
